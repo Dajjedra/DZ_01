@@ -42,7 +42,7 @@ html,body{
 	height:	118px;
 }
 body	{
-	background:	url(images/bg.png);/*
+	background:	url(../images/bg.png);/*
 	background-attachment: fixed;*/
 	min-width:	1000px;
 	font-family: fira_sansbook;
@@ -63,7 +63,7 @@ header li	{
 	margin:	0 0 0 20px;
 }
 .sprite {
-    background-image: url(images/social-icon.png);
+    background-image: url(../images/social-icon.png);
     background-repeat: no-repeat;
 	text-indent: -9999px;
 	display:	inline-block;
@@ -155,19 +155,19 @@ aside li	{
 	background-color:	#41b9d4;
 }
 .mail-img	{
-	background:	url(images/email.png) 30px center no-repeat;
+	background:	url(../images/email.png) 30px center no-repeat;
 }
 .phone	{
 	background-color:	#48cbe8;
 }
 .phone-img	{
-	background:	url(images/phone.png) 30px center no-repeat;
+	background:	url(../images/phone.png) 30px center no-repeat;
 }
 .skype	{
 	background-color:	#51daf8;
 }
 .skype-img	{
-	background:	url(images/skype.png) 30px center no-repeat;
+	background:	url(../images/skype.png) 30px center no-repeat;
 }
 aside span	{
 	margin-left:	70px;
@@ -194,13 +194,13 @@ article	{
 	margin-top: 15px;
 }
 .about-bag	{
-	background:	url(images/bag.png) 50px center no-repeat;
+	background:	url(../images/bag.png) 50px center no-repeat;
 }
 .about-hat	{
-	background:	url(images/hat.png) 50px center no-repeat;
+	background:	url(../images/hat.png) 50px center no-repeat;
 }
 .about-doc	{
-	background:	url(images/doc.png) 50px center no-repeat;
+	background:	url(../images/doc.png) 50px center no-repeat;
 }
 .period	{
 	margin:	0 0 0 120px;
