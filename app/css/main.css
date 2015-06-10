@@ -52,7 +52,7 @@ header, nav, article, footer	{
 	}
 .logo	{
 	margin:	39px 0 0 100px;
-	display:	inline-block;
+	float:	left;
 }
 header ul	{
 	float:	right;
@@ -222,19 +222,20 @@ article	{
 	margin:	20px 0 0 230px;
 	font: 12pt fira_sansbook;
 }
-.about-me-wrapper p	{
+.about-me-block	{
+	display:	table;
 	margin:	8px 0;
 }
 .about-me	{
 	font: 12pt fira_sansmedium;
-	margin-right:	23px;
-}
-.table	{
-	display:	table;
+	padding-right:	23px;
 }
 .skills	{
 	display:	table-cell;
 	}
+.skills li	{
+	display:	inline;
+}
 .keyword	{
 	background:	#3ba8c0;
 	background:	linear-gradient(to top, #2e8ca2, #3ba8c0 );
