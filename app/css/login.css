@@ -1,0 +1,49 @@
+.wrapper	{
+}
+article	{
+	height:	490px;
+	width:	590px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	font: 35pt fira_sansbook;
+	border-radius:	5px;
+	overflow:	hidden;
+}
+header	{
+	background:	#48cbe8;
+	color:	#ffffff;
+	border-bottom:	solid 10px #67dffa;
+	padding:	15px;
+}
+.logon-header	{
+	margin:	0 auto;
+	width:	350px;
+}
+form	{
+	width:	425px;
+	margin:	auto;
+	color:	#a1a6b3;
+	font: 25pt fira_sanslight;
+}
+input	{
+	width:	100%;
+	height:	60px;
+	border-radius:	5px;
+	border:	solid 1px #67dffa;
+}
+.uid, .pass	{
+	margin:	10px 0 -0 150px;
+}
+input	{
+	margin-bottom:	10px;
+}
+.submit	{
+	width:	225px;
+	margin:	20px 0 0 100px;
+	color:	#ffffff;
+	background:	#48cbe8;
+}
