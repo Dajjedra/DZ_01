@@ -1,0 +1,34 @@
+
+.feed-header	{
+	border-bottom:	solid 20px;
+	font-size: 16pt;
+	color:	#ffffff;
+	padding:	50px;
+	text-align: center;
+	background:	#48cbe8;
+	border-color:	#51daf8;
+}
+form	{
+	margin:	0 auto;
+	display:	table;
+	padding:	10px;
+}
+.feed-name, .feed-mail	{
+	display:	inline-block;
+	padding:	5px;
+}
+.form input	{
+	width:	100px;
+}
+.feed-message	{
+}
+.form textarea	{
+	width:	210px;
+	margin-left:	5px;
+}
+.feed-capcha	{
+	margin-top:	30px;
+}
+.feed-button input	{
+	margin:	5px;
+}
