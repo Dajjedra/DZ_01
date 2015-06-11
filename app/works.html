@@ -38,7 +38,7 @@
 		<div class=wrapp id=openModal>
 			<div class="modul">
 				<div class="header">
-					<span>Добавление проекта</span><a href=#close>Quit</a>
+					<span>Добавление проекта</span><a class=close href=#close><img src=images/close.png></a>
 				</div>
 				<div class="add-project">
 					<form class="new-project" method="post">
@@ -47,8 +47,10 @@
 							<input class="input" type="text" name="name-project" placeholder="Введите название проекта">
 						</div>
 						<div class="add-file">
-							<div class="add-file-project">Картинка проекта</div>
-							<input class="input" type="text" name="img-progect" placeholder="Загрузите изображение" type="file">
+							<div class="add-file-project">Картинка проекта</div><!--
+							<input class="input" type="text" name="img-progect" placeholder="Загрузите изображение">-->
+							<div class="input input-bg">Загрузите изображение</div>
+							<input class="input-file" name="img-progect-file" type="file" value="1">
 						</div>
 						<div class="add-url">
 							<div class="add-url-project">URL проекта</div>
@@ -180,8 +182,8 @@
 							</div>
 							<div class=works-item>
 								<a href=#openModal>
-									<div class=works-img>
-										Добавить проект
+									<div class="works-img add-prj">
+										<img src=images/add-prj.png>
 									</div>
 								</a>
 							</div>
