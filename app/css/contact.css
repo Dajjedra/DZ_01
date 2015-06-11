@@ -1,34 +1,56 @@
 
 .feed-header	{
 	border-bottom:	solid 20px;
-	font-size: 16pt;
+	font-size: 20pt;
 	color:	#ffffff;
-	padding:	50px;
+	padding:	38px;
 	text-align: center;
 	background:	#48cbe8;
 	border-color:	#51daf8;
 }
+.form	{
+	margin-top:	30px;
+}
 form	{
 	margin:	0 auto;
 	display:	table;
-	padding:	10px;
+	color:	#a1a6b3;
 }
 .feed-name, .feed-mail	{
 	display:	inline-block;
-	padding:	5px;
+	padding:	15px 0;
+}
+.feed-name input	{
+	margin:	0 40px 0 0;
 }
 .form input	{
-	width:	100px;
-}
-.feed-message	{
+	width:	180px;
+	height:	30px;
+	border:	solid 1px #51daf8;
+	border-radius:	5px;
 }
 .form textarea	{
-	width:	210px;
-	margin-left:	5px;
+	width:	400px;
+	height:	180px;
+	border:	solid 1px #51daf8;
+	border-radius:	5px;
 }
 .feed-capcha	{
-	margin-top:	30px;
+	margin-top:	10px;
+}
+.feed-capcha input	{
+	margin:	30px 0 0 60px;
+}
+.capcha	{
+	float:	left;
 }
 .feed-button input	{
-	margin:	5px;
+	width:	130px;
+	color:	#ffffff;
+	background:	#48cbe8;
+	border:	none;
+}
+.feed-button .reset	{
+	float:	right;
+	background:	#849db5;
 }
