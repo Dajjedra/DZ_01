@@ -15,6 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/works.css">
+		<link rel="stylesheet" type="text/css" href="css/modul.css">
 		<link rel="stylesheet" type="text/css" href="fonts/fira/fira.css">
 		
 		<!-- JS
@@ -34,6 +35,36 @@
 		<![endif]-->
 	</head>
 	<body>
+		<div class=wrapp id=openModal>
+			<div class="modul">
+				<div class="header">
+					<span>Добавление проекта</span><a href=#close>Quit</a>
+				</div>
+				<div class="add-project">
+					<form class="new-project" method="post">
+						<div class="first-form">
+							<div class="name-project">Название проекта</div>
+							<input class="input" type="text" name="name-project" placeholder="Введите название проекта">
+						</div>
+						<div class="add-file">
+							<div class="add-file-project">Картинка проекта</div>
+							<input class="input" type="text" name="img-progect" placeholder="Загрузите изображение" type="file">
+						</div>
+						<div class="add-url">
+							<div class="add-url-project">URL проекта</div>
+							<input class="input" type="text" placeholder="Добавьте ссылку" name="url-project">
+						</div>
+						<div class="description">
+							<div class="add-description">Описание</div>
+							<textarea class="last-form" name="add-description-project" placeholder="Пара слов о вашем проекте"></textarea>
+						</div>
+						<div class="add-submit">
+							<button class="submit" type="submit">Добавить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 		<div class=wrapper>
 			<!--[if lt IE 8]>
 			<p class=browserhappy>Ваш браузер <strong>устарел</strong>. Пожалуйста <a href=#>обновите</a> его.</p>
@@ -148,42 +179,11 @@
 								</div>
 							</div>
 							<div class=works-item>
-								<div class=works-img>
-									<img src=images/works/7.gif>
-								</div>
-								<div class=works-url>
-									<a href=#>ссылка</a>
-								</div>
-								<div class=works-desc>
-									Подпись
-								</div>
-							</div>
-							<div class=works-item>
-								<div class=works-img>
-									<img src=images/works/8.gif>
-								</div>
-								<div class=works-url>
-									<a href=#>ссылка</a>
-								</div>
-								<div class=works-desc>
-									Подпись
-								</div>
-							</div>
-							<div class=works-item>
-								<div class=works-img>
-									<img src=images/works/9.gif>
-								</div>
-								<div class=works-url>
-									<a href=#>ссылка</a>
-								</div>
-								<div class=works-desc>
-									Подпись
-								</div>
-							</div>
-							<div class=works-item>
-								<div class=works-img>
-									Добавить проект
-								</div>
+								<a href=#openModal>
+									<div class=works-img>
+										Добавить проект
+									</div>
+								</a>
 							</div>
 					</article>
 				</section>

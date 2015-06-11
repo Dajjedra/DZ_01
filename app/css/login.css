@@ -12,6 +12,7 @@ article	{
 	font: 35pt fira_sansbook;
 	border-radius:	5px;
 	overflow:	hidden;
+	box-shadow: 0 5px 5px 0 rgba(15, 12, 7, 0.3);
 }
 header	{
 	background:	#48cbe8;
@@ -46,4 +47,8 @@ input	{
 	margin:	20px 0 0 100px;
 	color:	#ffffff;
 	background:	#48cbe8;
+	box-shadow: 0 5px 5px 0 rgb(59, 168, 192);
+}
+.submit:hover	{
+	box-shadow: none;
 }

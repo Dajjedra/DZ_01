@@ -32,6 +32,7 @@ html,body{
 	min-height:100%;
 	height:auto!important;
 	overflow:hidden;
+	z-index:	1;
 }
 .hr	{
 	background:	radial-gradient(#1d677b, #e7eff3);

@@ -1,0 +1,51 @@
+.modal-bg	{
+	/*background-color:	#7e8c99;*/
+}
+.modul	{
+	position:	fixed;
+	background:	#eff3f7;
+	left:	40%;
+	top:	20%;
+	z-index:	7;
+	border-radius:	5px;
+	overflow:	hidden;
+	width:	360px;
+	height:	495px;
+	font: 13pt fira_sansbook;
+	color:	#a7acb8;
+}
+.wrapp:target	{
+	display:	block;
+}
+.wrapp	{
+	position:	fixed;
+	background:	rgba(126, 140, 153, 0.5);
+	height:	100%;
+	width:	100%;
+	z-index:	5;
+	display:	none;
+}
+.modul .header	{
+	padding:	4px 0 4px 9px;
+	border-bottom:	solid 10px #67dffa;
+	background:	#48cbe8;
+	font: 19pt fira_sansregular;
+	color:	#ffffff;
+}
+.new-project	{
+margin:	0 0 0 15px;
+}
+.input	{
+	width: 320px;
+	height:	37px;
+	margin:	5px 0 0 0;
+	color: rgb(72, 203, 232);
+	border-radius:	5px;
+	border:	solid 1px #67dffa;
+}
+.last-form	{
+	width:	320px;
+	height:	110px;
+	border-radius:	5px;
+	border:	solid 1px #67dffa;
+}
