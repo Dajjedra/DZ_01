@@ -1,0 +1,34 @@
+.works-item	{
+	display:	inline-block;
+	width:	180px;
+	margin:	25px 15px 10px 15px;
+}
+.works-img	{
+	width:	179px;
+	height:	125px;
+	overflow: hidden;
+	background: #3d8eb9;
+	border:	solid 2px #3ba8c0;
+	border-radius:	5px;
+}
+.works-img img:hover	{
+	opacity:	0.5;
+}
+.works-img img	{
+	width:	120%;
+}
+.works-url	{
+	text-align: center;
+	margin-top:	5px;
+}
+.works-url	a{
+	text-decoration: none;
+	color:	#3ba8c0;
+	font-size:	10pt;
+}
+.works-desc	{
+	text-align: center;
+	color:	#959aa8;
+	margin-top:	5px;
+	line-height:	20px;
+}

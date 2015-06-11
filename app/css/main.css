@@ -146,31 +146,31 @@ aside	{
 	overflow:	hidden;
 }
 aside li	{
-	padding:	15px 0;
+	padding:	8px 0;
 }
 .contact	{
-	margin-left:	10px;
+	margin-left:	17px;
 }
 .mail	{
 	background-color:	#41b9d4;
 }
 .mail-img	{
-	background:	url(../images/email.png) 30px center no-repeat;
+	background:	url(../images/email.png) 40px center no-repeat;
 }
 .phone	{
 	background-color:	#48cbe8;
 }
 .phone-img	{
-	background:	url(../images/phone.png) 30px center no-repeat;
+	background:	url(../images/phone.png) 40px center no-repeat;
 }
 .skype	{
 	background-color:	#51daf8;
 }
 .skype-img	{
-	background:	url(../images/skype.png) 30px center no-repeat;
+	background:	url(../images/skype.png) 40px center no-repeat;
 }
 aside span	{
-	margin-left:	70px;
+	margin-left:	80px;
 }
 aside a	{
 	color: #eff3f7;
@@ -179,8 +179,8 @@ section	{
 	margin:	0 0 50px 310px;
 	}
 article	{
-	margin:	0 0 30px 0;
-	padding:	0 0 30px 0;/*
+	margin:	0 0 25px 0;
+	padding:	0 0 45px 0;/*
 	line-height:	120%;*/
 }
 .article-header	{
@@ -192,6 +192,9 @@ article	{
 	}
 .about-item	{
 	margin-top: 15px;
+}
+.about-item	li{
+	margin-top: -5px;
 }
 .about-bag	{
 	background:	url(../images/bag.png) 50px center no-repeat;
@@ -240,9 +243,11 @@ article	{
 	background:	#3ba8c0;
 	background:	linear-gradient(to top, #2e8ca2, #3ba8c0 );
 	border-radius:	3px;
-	padding: 0 15px;
+	padding: 0 10px;
 	color:	white;
 	line-height:	200%;
+	margin-right:	5px;
+	font:	10pt fira_sansmedium;
 }
 footer	{
 	height: 80px;
