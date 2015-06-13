@@ -42,17 +42,20 @@
 .new-project	{
 margin:	0 0 0 15px;
 }
-.input	{
+.input, .last-form	{
 	width: 320px;
 	height:	37px;
 	margin:	5px 0 0 0;
-	color: rgb(72, 203, 232);
+	color: #67dffa;
 	border-radius:	5px;
 	border:	solid 1px #67dffa;
 	background:	#ffffff;
 	outline:	none;
 }
 .input::-webkit-input-placeholder	{
+	color: #67dffa;
+}
+textarea::-webkit-input-placeholder	{
 	color: #67dffa;
 }
 .add-file	{
@@ -70,11 +73,11 @@ margin:	0 0 0 15px;
 	background:	url(../images/input-file.png) 270px center no-repeat #ffffff;;
 }
 .last-form	{
+	height:	110px;/*
 	width:	320px;
-	height:	110px;
 	border-radius:	5px;
 	border:	solid 1px #67dffa;
-	outline:	none;
+	outline:	none;*/
 }
 .last-form::-webkit-input-placeholder	{
 	color: #67dffa;

@@ -234,6 +234,10 @@ article	{
 	font: 12pt fira_sansmedium;
 	padding-right:	23px;
 }
+.about-me-last	{
+	display:	inline-block;
+	min-width:	150px;
+}
 .skills	{
 	display:	table-cell;
 	}
