@@ -16,24 +16,39 @@ form	{
 	display:	table;
 	color:	#a1a6b3;
 }
+label{
+	display:	block;
+}
 .feed-name, .feed-mail	{
 	display:	inline-block;
 	padding:	15px 0;
+	position:	relative;
+}
+.feed-name, .feed-mail, .feed-message, .feed-capcha	{
+	position:	relative;
 }
 .feed-name input	{
 	margin:	0 40px 0 0;
+}
+input::-webkit-input-placeholder	{
+	color: #67dffa;
+}
+textarea::-webkit-input-placeholder	{
+	color: #67dffa;
 }
 .form input	{
 	width:	180px;
 	height:	30px;
 	border:	solid 1px #51daf8;
 	border-radius:	5px;
+	color: #67dffa;
 }
 .form textarea	{
 	width:	400px;
 	height:	180px;
 	border:	solid 1px #51daf8;
 	border-radius:	5px;
+	color: #67dffa;
 }
 .feed-capcha	{
 	margin-top:	10px;
@@ -44,13 +59,84 @@ form	{
 .capcha	{
 	float:	left;
 }
-.feed-button input	{
-	width:	130px;
-	color:	#ffffff;
-	background:	#48cbe8;
-	border:	none;
-}
+
 .feed-button .reset	{
 	float:	right;
-	background:	#849db5;
+}
+.feed-button button	{
+	width:	130px;
+	height:	30px;
+	color:	#ffffff;
+	background:	#48cbe8;
+	border-radius:	10px;
+	border: none;
+	box-shadow: 0 3px 0 #3ba8c0;
+}
+.feed-button button:active	{
+	box-shadow: 0 -3px 0 #3ba8c0;
+	}
+.submit:hover, .reset:hover	{
+	box-shadow: none;
+}
+.submit:active, .reset:active	{
+	box-shadow: 0 -3px 0 #3ba8c0;
+}
+.submit:focus, .reset:focus	{
+	outline: none;
+}
+
+/* Валидация */
+
+#name-tooltip, #mail-tooltip, #message-tooltip, #capcha-tooltip	{
+	position:	absolute;
+	background:	#f97e76;
+	color:	#ffffff;
+	border-radius:	5px;
+	padding:	0 15px;
+	margin-top:	5px;
+}
+.triangle-tooltip	{
+	position:	absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 0 10px 14px;
+	border-color: transparent transparent transparent #f97f76;
+}
+.triangle-tooltip-l	{
+	position:	absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 14px 10px 0;
+	border-color: transparent #f97f76 transparent transparent;
+}
+#name-tooltip	{
+	left:	-162px;
+}
+#nameContact-triangle-tooltip	{
+	top:	3px;
+	left:	149px;
+}
+#mail-tooltip	{
+	right:	-173px
+}
+#mailContact-triangle-tooltip	{
+	top:	3px;
+	left:	-6px;
+}
+#message-tooltip	{
+	left:	-125px
+}
+#messageContact-triangle-tooltip	{
+	top:	3px;
+	left:	112px;
+}
+#capcha-tooltip	{
+	top:	55px;
+	right:	-155px
+}
+#capchaContact-triangle-tooltip	{
+	top:	3px;
+	left:	-6px;
 }

@@ -40,21 +40,23 @@
 			<p class=browserhappy>Ваш браузер <strong>устарел</strong>. Пожалуйста <a href=#>обновите</a> его.</p>
 			<![endif]-->
 			<header>
-				<a href=index.html class=logo><img src=images/logo.png></a>
-				<ul>
-					<li>
-						<a href=https://vk.com/dajjedra target=_blank class="sprite sprite-vk">ВКонтакте</a>
-					</li>
-					<li>
-						<a href=https://twitter.com/dajjedra target=_blank class="sprite sprite-tw">Twitter</a>
-					</li>
-					<li>
-						<a href=https://www.facebook.com/dajjedra target=_blank class="sprite sprite-fb">Facebook</a>
-					</li>
-					<li>
-						<a href=https://github.com/Dajjedra target=_blank class="sprite sprite-git">Git</a>
-					</li>
-				</ul>
+				<div class=header-wrapper>
+					<a href=index.html class=logo><img src=images/logo.png></a>
+					<ul>
+						<li>
+							<a href=https://vk.com/dajjedra target=_blank class="sprite sprite-vk">ВКонтакте</a>
+						</li>
+						<li>
+							<a href=https://twitter.com/dajjedra target=_blank class="sprite sprite-tw">Twitter</a>
+						</li>
+						<li>
+							<a href=https://www.facebook.com/dajjedra target=_blank class="sprite sprite-fb">Facebook</a>
+						</li>
+						<li>
+							<a href=https://github.com/Dajjedra target=_blank class="sprite sprite-git">Git</a>
+						</li>
+					</ul>
+				</div>
 			</header>
 			<div class=hr></div>
 			<div class=sect-wrapper>
@@ -83,28 +85,32 @@
 							</div>
 						</header>
 						<div class=form>
-							<form>
+							<form name=feedback onsubmit="return validationContact()">
 								<div class=feed-name>
-									<div>Имя</div>
-									<input type=text>
+									<label>Имя</label>
+									<span id="name-tooltip"></span>
+									<input id="name" name=name type=text placeholder="  Как к вам обращаться" onkeydown="nameResetContact()">
 								</div>
 								<div class=feed-mail>
-									<div>Email</div>
-									<input type=text>
+									<label>Email</label>
+									<span id="mail-tooltip"></span>
+									<input id=mail name=mailtype=text placeholder="  Куда мне писать" onkeydown="mailResetContact()">
 								</div>
 								<div class=feed-message>
-									<div>Сообщение</div>
-									<textarea rows="3" wrap="off"></textarea>
+									<label>Сообщение</label>
+									<span id="message-tooltip"></span>
+									<textarea id=message name=message rows="3" wrap="off" placeholder="  Кратко в чем суть" onkeydown="messageResetContact()"></textarea>
 								</div>
 								<div class=feed-capcha>
-									<div>Введите код, указанный на картинке</div>
+									<label>Введите код, указанный на картинке</label>
+									<span id="capcha-tooltip"></span>
 									<div class=capcha><img src=images/captcha.jpg></div>
-									<input type=text>
+									<input id=capcha name=capcha type=text placeholder="  Введите код" onkeydown="capchaResetContact()">
 								</div>
 								<div class=clear></div>
 								<div class=feed-button>
-									<input class=submit type=submit value=Отправить>
-									<input class=reset type=reset value=Очистить>
+									<button class=submit type=submit>Отправить</button>
+									<button class=reset type=reset>Очистить</button>
 								</div>
 							</form>
 						</div>
@@ -120,6 +126,7 @@
 			<div class=copyright>
 				© 2015 г. Это мой сайт, пожалуйста, не копируйте и не воруйте его.
 			</div>
+			<script src="js/valid.js"></script>
 		</footer>
 	</body>
 </html>

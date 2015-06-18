@@ -38,27 +38,31 @@
 		<div class=wrapp id=openModal>
 			<div class="modul">
 				<div class="header">
-					<span>Добавление проекта</span><a class=close href=#close><img src=images/close.png></a>
+					<span>Добавление проекта</span><a class=close href=# onclick="closeModal()"><img src=images/close.png></a>
 				</div>
 				<div class="add-project">
-					<form class="new-project" method="post">
+					<form class="new-project" name=add-project method="post" onsubmit="return validation()">
 						<div class="first-form">
+							<span id="name-project-tooltip"></span>
 							<div class="name-project">Название проекта</div>
-							<input class="input" type="text" name="name-project" placeholder="Введите название проекта">
+							<input id="name-project" class="input" type="text" name="name-project" onkeydown="nameReset()" placeholder="  Введите название проекта">
 						</div>
 						<div class="add-file">
+							<span id="file-project-tooltip"></span>
 							<div class="add-file-project">Картинка проекта</div><!--
 							<input class="input" type="text" name="img-progect" placeholder="Загрузите изображение">-->
-							<div class="input input-bg">Загрузите изображение</div>
+							<div id="file-project" class="input input-bg">Загрузите изображение</div>
 							<input class="input-file" name="img-progect-file" type="file" value="1">
 						</div>
 						<div class="add-url">
+							<span id="url-project-tooltip"></span>
 							<div class="add-url-project">URL проекта</div>
-							<input class="input" type="text" placeholder="Добавьте ссылку" name="url-project">
+							<input id="url-project" class="input" type="text" onkeydown="urlReset()" placeholder="  Добавьте ссылку" name="url-project">
 						</div>
 						<div class="description">
+							<span id="desc-project-tooltip"></span>
 							<div class="add-description">Описание</div>
-							<textarea class="last-form" name="add-description-project" placeholder="Пара слов о вашем проекте"></textarea>
+							<textarea id="desc-project" class="last-form" name="add-description-project" onkeydown="descReset()" placeholder="  Пара слов о вашем проекте"></textarea>
 						</div>
 						<div class="add-submit">
 							<button class="submit" type="submit">Добавить</button>
@@ -72,21 +76,23 @@
 			<p class=browserhappy>Ваш браузер <strong>устарел</strong>. Пожалуйста <a href=#>обновите</a> его.</p>
 			<![endif]-->
 			<header>
-				<a href=index.html class=logo><img src=images/logo.png></a>
-				<ul>
-					<li>
-						<a href=https://vk.com/dajjedra target=_blank class="sprite sprite-vk">ВКонтакте</a>
-					</li>
-					<li>
-						<a href=https://twitter.com/dajjedra target=_blank class="sprite sprite-tw">Twitter</a>
-					</li>
-					<li>
-						<a href=https://www.facebook.com/dajjedra target=_blank class="sprite sprite-fb">Facebook</a>
-					</li>
-					<li>
-						<a href=https://github.com/Dajjedra target=_blank class="sprite sprite-git">Git</a>
-					</li>
-				</ul>
+				<div class=header-wrapper>
+					<a href=index.html class=logo><img src=images/logo.png></a>
+					<ul>
+						<li>
+							<a href=https://vk.com/dajjedra target=_blank class="sprite sprite-vk">ВКонтакте</a>
+						</li>
+						<li>
+							<a href=https://twitter.com/dajjedra target=_blank class="sprite sprite-tw">Twitter</a>
+						</li>
+						<li>
+							<a href=https://www.facebook.com/dajjedra target=_blank class="sprite sprite-fb">Facebook</a>
+						</li>
+						<li>
+							<a href=https://github.com/Dajjedra target=_blank class="sprite sprite-git">Git</a>
+						</li>
+					</ul>
+				</div>
 			</header>
 			<div class=hr></div>
 			<div class=sect-wrapper>
@@ -201,7 +207,7 @@
 								</div>
 							</div>
 							<div class="works-item add-prj-item">
-								<a href=#openModal>
+								<a href=# onclick="openModal()">
 									<div class="works-img add-prj">
 										<img src=images/add-prj.png>
 									</div>
@@ -219,6 +225,8 @@
 			<div class=copyright>
 				© 2015 г. Это мой сайт, пожалуйста, не копируйте и не воруйте его.
 			</div>
+			<script src="js/modal.js"></script>
+			<script src="js/valid.js"></script>
 		</footer>
 	</body>
 </html>

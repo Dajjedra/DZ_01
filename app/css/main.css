@@ -42,6 +42,10 @@ html,body{
 .wrapper > header	{
 	height:	118px;
 }
+.header-wrapper	{
+	margin:	0 auto;
+	max-width:	1400px;
+}
 body	{
 	background:	url(../images/bg.png);/*
 	background-attachment: fixed;*/
